@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html><head>
+    <style>
+        body {
+            background-color: skyblue;
+            font-family:Arial, sans-serif;
+        }.container {
+            width:400px;
+            margin:50px auto;
+            padding:20px;
+            border:2px solid;
+            border-radius:10px;
+            background-color:white;
+        }h1{
+            text-align:center;
+        }label {
+            font-weight:bold;
+        }input[type="text"],input[type="password"] {
+            width:100%;
+            padding:10px;
+            margin:5px 0 15px 0;
+            border:1px solid;
+            border-radius:5px;
+            box-sizing:border-box; 
+        }button[type="submit"] {
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            background-color:green;
+            color: white;
+            font-size:16px;
+            cursor:pointer;
+        }button[type="submit"]:hover {
+            background-color:red; 
+        }.login-link{
+            text-align:center;
+        }
+    </style>
+</head>
+<body> 
+<div class="container">
+<h1>Login Form</h1> 
+<br>
+<br>
+<center>
+<label>UserName</label>
+<input type="text" name="username" placeholder="username" size="15" required/>
+<br>
+<br>
+<label>Password</label>
+<input type="password" name="password" placeholder="password" size="15" required/>
+<br><br>
+<button type="submit" class="loginbtn" onclick="alert('Logged In successfully'),location.href='toDo1.html'"><font color="white">Login</font></button>
+<br><br>
+</center>
+</div>
+</body>
+</html>

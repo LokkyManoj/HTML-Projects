@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 100px;
+            text-align: center;
+            font-size: 36px;
+            color:orchid;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid;
+            padding: 8px;
+            text-align:left;
+        }
+        th {
+            background-color:lightblue;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            
+        }
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>ToDoList(Task Assigning)</h1>
+    <table>
+        <tr>
+            <th>Employee Name</th>
+            <th>Task ID</th>
+            <th>Task</th>
+            <th>Due Date</th>
+        </tr>
+        <tr>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td contenteditable="true"> </td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+            <td contenteditable="true"></td>
+        </tr>
+        <!-- Add more rows if needed -->
+    </table>
+    <center>
+        <button onclick="alert('Saved successfully')">Save</button>
+    </center>
+</body>
+</html>
