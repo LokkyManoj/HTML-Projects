@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>My Task</title>
     <style>
+        header {
+  background-color:black;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+/* header-buttons {
+            display: flex;
+            gap: 10px;
+            float:right;
+            padding-right: 20%;
+        } */
+
         body {
             background-image: url("C:\\Users\\Mano3578\\Pictures\\Screenshots\\task.jpg");
-            background-size: cover;
+            background-size:cover;
+            height: 85vh;
+            
             background-position: center;
+            background-repeat: no-repeat;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,34 +32,63 @@
             margin-top: 100px;
             text-align: center;
             font-size: 36px;
-            color: red;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         button {
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
-            background-color: green;
+            background-color: white;
             color: white;
             font-size: 18px;
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: red;
+            background-color: gray;
         }
         center {
             margin-top: 50px;
         }
+
+        #list{
+            position:absolute;
+            width: 25%;
+            text-align: center;
+            left : 35%;
+            font-size: large;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-shadow: 2px 2px 4px rgba(198, 10, 10, 0.2);
+
+        }
+
+        #btns{
+            position:absolute;
+            width: 25%;
+            left : 75%;
+             top: 5%;
+        }
     </style>
 </head>
-<body>
+
+    <header><img src="C:\Users\Mano3578\Pictures\Screenshots\mytask.png" alt="mytask" style="height:90px; width:100px";>
+        <div id="btns">
+            <button type="submit" style="color:black; padding:right;" onclick="location.href='Registration.html'">Register</button> 
+            <button type="submit" style="color: black;" onclick="location.href='Login.html'">Login</button>
+        </div>
+        
+
+    </header>
+    <body>
     <center>
-        <h1>Welcome to ToDoList Reminder</h1>
-        <br><br>
-        <button type="submit" onclick="location.href='demo.html'">Register</button>
-        <br><br>
-        <button type="submit" onclick="location.href='Login.html'">Login</button>
+        <div id="list">
+        <ul>
+        <li><b>Easily manage your personal tasks.</b></li><br>
+        <li><b>Organize all your events and tasks.</b></li><br>
+        <li><b>My Task is a beautifully simple todo list app that will help keep your busy life organised everyday</b> </li>
+    </ul>
+</div>
+       
     </center>
 </body>
 </html>
