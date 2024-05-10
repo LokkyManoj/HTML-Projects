@@ -2,6 +2,14 @@
 <html><head>
     <style>
         body {
+            background-image: url("C:\\Users\\Mano3578\\Pictures\\Screenshots\\task.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
             background-color: skyblue;
             font-family:Arial, sans-serif;
         }.container {
@@ -10,7 +18,7 @@
             padding:20px;
             border:2px solid;
             border-radius:10px;
-            background-color:white;
+            background-color:gray;
         }h1{
             text-align:center;
         }label {
@@ -27,12 +35,12 @@
             padding:10px;
             border:none;
             border-radius:5px;
-            background-color:green;
+            background-color:black;
             color: white;
             font-size:16px;
             cursor:pointer;
         }button[type="submit"]:hover {
-            background-color:red; 
+            background-color:gray; 
         }.login-link{
             text-align:center;
         }
@@ -40,7 +48,8 @@
 </head>
 <body> 
 <div class="container">
-<h1>Login Form</h1> 
+    <form id="content">
+<h1>Login</h1> 
 <br>
 <br>
 <center>
@@ -51,9 +60,10 @@
 <label>Password</label>
 <input type="password" name="password" placeholder="password" size="15" required/>
 <br><br>
-<button type="submit" class="loginbtn" onclick="alert('Logged In successfully'),location.href='toDo1.html'"><font color="white">Login</font></button>
+<button type="submit" class="loginbtn" onclick="alert('Logged In successfully'),location.href='toDo1.html'"><font color="white">Next</font></button>
 <br><br>
 </center>
+</form>
 </div>
 </body>
 </html>

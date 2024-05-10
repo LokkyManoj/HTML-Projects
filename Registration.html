@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("C:\\Users\\Mano3578\\Pictures\\Screenshots\\task.jpg");
+            background-size: cover;
+            
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: skyblue;
+            font-family: Arial,sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 2px solid;
+            border-radius: 10px;
+            background-color:gray;
+        }
+        h1{
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            
+        }
+        input[type="text"],input[type="password"],input[type="email"],input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        button[type="submit"] {
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            background-color:black;
+            color: white;
+            font-size:16px;
+            cursor:pointer;
+        }
+        button[type="submit"]:hover {
+            background-color:lightblue;
+        }
+        .login-link{
+            text-align:center;
+        }
+        input[type="country code"]{
+            width: 10%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: 1px;
+        }
+        input[type="phone"]{
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form id="content">
+    <h1>Registration</h1>
+    <label>UserName</label>
+    <input type="text" name="username" placeholder="username" size="15" required/><br><br>
+    <label>Date of Birth</label>
+    <input type="date" name="date of birth" placeholder="Date of Birth" size="15" required/><br><br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="password" size="15" required/><br><br>
+    <label>EmailID</label>
+    <input type="email" id="email" name="email" placeholder="emailId" required/><br><br>
+    <label>PhoneNumber</label><br>
+    <input type="country code" id="country code" name="country code" value="+91" size="2"/>
+    <input type="phone" name="phone" placeholder="phonenumber" size="10"/><br><br>
+    <label>Gender</label><br>
+    <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br><br>
+    <label>Role</label><br>
+    <input type="checkbox" name="role" value="manager" checked> Manager<br>
+    <input type="checkbox" name="role" value="employee"> Employee<br><br>
+    <button type="submit" class="registerbtn" onclick="location.href='demo2.html'"><font color="white">Next</font></button><br><br>
+    <p class="login-link">Do you have an account already?<a href="Login.html">Login</a></p>
+</form>
+</div>
+</body>
+</html>
