@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('C:/Users/Mano3578/Downloads/top-view-blue-monday-concept-composition-with-telephone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+
+    backface-visibility: visible;
+    color: #fff;
+    padding: 2px;
+    text-align: left;
+}
+
+
+main {
+    padding: 20px;
+    margin-left: 600px;
+    
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: rgb(156, 228, 235,0.2);
+    padding: 2px;
+    text-align:center;
+}
+h1{
+    font-size: 23px;
+    color: black;
+}
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right: 0%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    text-align: right;
+}
+nav ul li a:hover{
+    color:cadetblue;
+}
+header h1 {
+    margin: 0;
+}
+</style>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="Main.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <form action="#" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TodoList. All rights reserved.</p>
+    </footer>
+</body>
+</html>
